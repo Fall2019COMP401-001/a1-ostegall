@@ -36,7 +36,7 @@ public class A1Novice {
 			
 			}
 			
-		double roundedTotal = Math.round(total * 100) / 100;
+		double roundedTotal = Math.round(total * 1000000000) / 1000000000;
 		
 		System.out.println(first_initial + ". " + last_name + ": " + roundedTotal);
 		
