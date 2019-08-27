@@ -35,10 +35,8 @@ public class A1Novice {
 				total = total + quantity * price;
 			
 			}
-			
-		double roundedTotal = Math.round(total * 1000000000) / 1000000000;
 		
-		System.out.println(first_initial + ". " + last_name + ": " + roundedTotal);
+		System.out.println(first_initial + ". " + last_name + ": " + total);
 		
 		}
 		
