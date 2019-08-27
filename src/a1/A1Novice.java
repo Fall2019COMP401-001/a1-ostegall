@@ -10,5 +10,37 @@ public class A1Novice {
 
 		// Your code follows here.
 		
+		int total_cust = scan.nextInt();
+		
+		for(int i = 0; i < total_cust; i++) {
+		
+		String first_name = scan.next();
+		
+		String first_initial = first_name.substring(1, 2);
+		
+		String last_name = scan.next();
+		
+		int items = scan.nextInt();
+		
+		double total = 0;
+		
+		for(int j = 0; j < items; j++) {
+			
+			int quantity = scan.nextInt();
+			
+			// String item_name = scan.next();
+			
+			double price = scan.nextDouble();
+			
+			total = total + (quantity * price);
+			
+			}
+		
+		System.out.println(first_initial + ". " + last_name + ": " + total);
+		
+		}
+		
+		scan.close();
+		
 	}
 }
