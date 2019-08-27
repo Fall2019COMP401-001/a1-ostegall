@@ -24,15 +24,15 @@ public class A1Novice {
 		
 		double total = 0;
 		
-		for(int j = 0; j < items; j++) {
+			for(int j = 0; j < items; j++) {
 			
-			int quantity = scan.nextInt();
+				int quantity = scan.nextInt();
 			
-			// String item_name = scan.next();
+				// String item_name = scan.next();
 			
-			double price = scan.nextDouble();
+				double price = scan.nextDouble();
 			
-			total = total + (quantity * price);
+				total = total + (quantity * price);
 			
 			}
 		
@@ -43,4 +43,5 @@ public class A1Novice {
 		scan.close();
 		
 	}
+	
 }
