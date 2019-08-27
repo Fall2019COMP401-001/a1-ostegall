@@ -30,7 +30,7 @@ public class A1Novice {
 			
 				String item_name = scan.next();
 			
-				int price = scan.nextInt();
+				double price = scan.nextDouble();
 			
 				total = total + (quantity * price);
 			
