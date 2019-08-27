@@ -32,7 +32,7 @@ public class A1Novice {
 			
 				double price = scan.nextDouble();
 			
-				total = total + (quantity * price);
+				total = total + quantity * price;
 			
 			}
 		
