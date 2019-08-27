@@ -35,8 +35,10 @@ public class A1Novice {
 				total = total + quantity * price;
 			
 			}
+			
+		double roundedTotal = Math.round(total);
 		
-		System.out.println(first_initial + ". " + last_name + ": " + total);
+		System.out.println(first_initial + ". " + last_name + ": " + roundedTotal);
 		
 		}
 		
