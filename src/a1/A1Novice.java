@@ -16,7 +16,7 @@ public class A1Novice {
 		
 		String first_name = scan.next();
 		
-		String first_initial = first_name.substring(1, 2);
+		String first_initial = first_name.substring(0, 1);
 		
 		String last_name = scan.next();
 		
