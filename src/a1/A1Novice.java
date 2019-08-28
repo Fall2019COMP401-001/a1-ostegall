@@ -28,7 +28,7 @@ public class A1Novice {
 			
 				int quantity = scan.nextInt();
 			
-				String item_name = scan.next();
+				String itemName = scan.next();
 			
 				double price = scan.nextDouble();
 			
