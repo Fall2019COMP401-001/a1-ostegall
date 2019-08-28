@@ -24,9 +24,9 @@ public class A1Adept {
 			
 			double price = scan.nextDouble();
 			
-			itemPriceArray[i] = price;
+			itemPriceArray[itemPriceArray.length] = price;
 			
-			itemNameArray[i] = itemName;
+			itemNameArray[itemNameArray.length] = itemName;
 			
 		}
 		
@@ -52,7 +52,7 @@ public class A1Adept {
 			
 			String lastName = scan.next();
 			
-			customerNameArray[i] = firstName + lastName;
+			customerNameArray[customerNameArray.length] = firstName + lastName;
 			
 			int itemsBought = scan.nextInt();
 			
@@ -80,7 +80,7 @@ public class A1Adept {
 				
 			}
 			
-			costArray[i] = cost;
+			costArray[costArray.length] = cost;
 			
 			totalCost = totalCost + costArray[i];
 			
