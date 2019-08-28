@@ -16,13 +16,15 @@ public class A1Adept {
 		
 		String[] itemNameArray = { };
 		
+		// were those initialized properly ?
+		
 		for (int i = 0; i < itemCount; i++) {
 			
 			String itemName = scan.next();
 			
 			double price = scan.nextDouble();
 			
-			problem here itemPriceArray[i] = price;
+			itemPriceArray[i] = price;
 			
 			itemNameArray[i] = itemName;
 			
