@@ -36,8 +36,10 @@ public class A1Novice {
 			
 			}
 		
-		System.out.println(first_initial + ". " + last_name + ": ")
-		System.out.printf("Value: %.2f", total);
+		String result = String.format("%.2f", total);
+		
+		System.out.println(first_initial + ". " + last_name + ": " + result);
+		
 		
 		}
 		
