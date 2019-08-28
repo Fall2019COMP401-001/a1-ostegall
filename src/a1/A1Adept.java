@@ -12,9 +12,9 @@ public class A1Adept {
 		
 		int itemCount = scan.nextInt();
 		
-		double[] itemPriceArray = { 0 };
+		double[] itemPriceArray = { };
 		
-		String[] itemNameArray = { "" };
+		String[] itemNameArray = { };
 		
 		for (int i = 0; i < itemCount; i++) {
 			
@@ -22,7 +22,7 @@ public class A1Adept {
 			
 			double price = scan.nextDouble();
 			
-			itemPriceArray[i] = price;
+			problem here itemPriceArray[i] = price;
 			
 			itemNameArray[i] = itemName;
 			
@@ -36,7 +36,7 @@ public class A1Adept {
 		
 		String[] customerNameArray = { "" };
 		
-		double[] costArray = { 0 };
+		double[] costArray = { };
 		
 		double totalCost = 0;
 		
