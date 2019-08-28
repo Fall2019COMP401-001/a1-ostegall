@@ -35,10 +35,9 @@ public class A1Novice {
 				total = total + quantity * price;
 			
 			}
-			
-		String.format("%.2f", total);
 		
-		System.out.println(first_initial + ". " + last_name + ": " + total);
+		System.out.println(first_initial + ". " + last_name + ": ")
+		System.out.printf("Value: %.2f", total);
 		
 		}
 		
