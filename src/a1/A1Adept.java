@@ -12,9 +12,9 @@ public class A1Adept {
 		
 		int itemCount = scan.nextInt();
 		
-		double[] itemPriceArray = { };
+		double[] itemPriceArray = new double[] { };
 		
-		String[] itemNameArray = { };
+		String[] itemNameArray = new String[] { };
 		
 		// were those initialized properly ?
 		
@@ -36,9 +36,9 @@ public class A1Adept {
 		
 		double max = 0;
 		
-		String[] customerNameArray = { "" };
+		String[] customerNameArray = new String[] { };
 		
-		double[] costArray = { };
+		double[] costArray = new double[] { };
 		
 		double totalCost = 0;
 		
