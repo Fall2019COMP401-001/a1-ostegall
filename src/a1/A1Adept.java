@@ -68,17 +68,19 @@ public class A1Adept {
 					
 				String nameOfItemBought = scan.next();
 					
-				itemsBoughtArray[j] = nameOfItemBought;
-					
 				for (int k = 0; k < itemCount; k++) {
 					
-					if (itemsBoughtArray[k] == itemNameArray[k]) {
-							
-						price = itemPriceArray[k];
-							
-						}
+					String string1 = nameOfItemBought;
 					
-					cost = cost + price * quantity;
+					String string2 = itemNameArray[k];
+					
+					if (string1.equals(string2)) {
+						
+						price = itemPriceArray[k];
+						
+						cost = cost + price * quantity;
+						
+					}
 					
 				}
 					
