@@ -62,13 +62,13 @@ public class A1Adept {
 			
 			for (int j = 0; j < itemsBought; j++) {
 				
-				System.out.println(itemNameArray[j]);
-				
 				quantity = scan.nextInt();
 				
 				String nameOfItemBought = scan.next();
 				
 				for (int k = 0; k < itemCount; k++) {
+					
+					System.out.println(itemNameArray[k]);
 					
 					if (itemNameArray[k] == nameOfItemBought) {
 						
