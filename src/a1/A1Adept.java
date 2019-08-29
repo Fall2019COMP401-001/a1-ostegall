@@ -66,18 +66,20 @@ public class A1Adept {
 				
 				quantity = scan.nextInt();
 				
-				String nameOfItemsBought = scan.next();
+				String nameOfItemBought = scan.next();
 				
 				for (int k = 0; k < itemCount; k++) {
 					
-					if (itemNameArray[k] == nameOfItemsBought) {
+					if (itemNameArray[k] == nameOfItemBought) {
 						
 						//not becoming 1, but staying initialized 0
 						
-						price = itemPriceArray[k];
+						System.out.println(itemNameArray[k]);
 						
-						break;
-								
+						System.out.println(itemPriceArray[k]);
+						
+						price = itemPriceArray[k];
+					
 					}
 					
 				}
@@ -117,12 +119,6 @@ public class A1Adept {
 		String minResult = String.format("%.2f", min);
 		
 		String averageResult = String.format("%.2f", average);
-		
-		System.out.println(price);
-		
-		System.out.println(cost);
-		
-		System.out.println(quantity);
 		
 		System.out.println("Biggest: " + biggestName + " (" + maxResult + ")");
 		
