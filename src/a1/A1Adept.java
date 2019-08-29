@@ -52,8 +52,6 @@ public class A1Adept {
 		
 		String biggestName = "";
 		
-		double[] costArray;
-		
 		for (int i = 0; i < customerCount; i++) {
 			
 			String firstName = scan.next();
@@ -86,13 +84,7 @@ public class A1Adept {
 					
 			}
 				
-			//initialize cost Array outside
-			
-			costArray = new double[itemsBought];
-			
-			costArray[i] = cost;
-				
-			totalCost = totalCost + costArray[i];
+			totalCost = totalCost + cost;
 				
 			if (cost < min) {
 					
