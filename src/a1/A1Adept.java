@@ -40,7 +40,7 @@ public class A1Adept {
 		
 		double cost = 0;
 		
-		double price = 1;
+		double price = 0;
 		
 		int quantity = 0;
 		
@@ -72,7 +72,7 @@ public class A1Adept {
 					
 					if (itemNameArray[k] == nameOfItemsBought) {
 						
-						//not becoming one but staying 0
+						//not becoming 1, but staying initialized 0
 						
 						price = itemPriceArray[k];
 								
@@ -121,6 +121,8 @@ public class A1Adept {
 		System.out.println(cost);
 		
 		System.out.println(quantity);
+		
+		System.out.println(itemNameArray);
 		
 		System.out.println("Biggest: " + biggestName + " (" + maxResult + ")");
 		
