@@ -26,6 +26,8 @@ public class A1Adept {
 			
 			itemNameArray[i] = itemName;
 			
+			System.out.println(itemNameArray[i]);
+			
 		}
 		
 		int customerCount = scan.nextInt();
@@ -115,8 +117,6 @@ public class A1Adept {
 		String minResult = String.format("%.2f", min);
 		
 		String averageResult = String.format("%.2f", average);
-		
-		System.out.println(itemNameArray[0]);
 		
 		System.out.println("Biggest: " + biggestName + " (" + maxResult + ")");
 		
