@@ -12,9 +12,9 @@ public class A1Adept {
 		
 		int itemCount = scan.nextInt();
 		
-		double[] itemPriceArray = new double[] { };
+		double[] itemPriceArray = new double[] { 0, 5, 5, 5, 5, 5, 5 };
 		
-		String[] itemNameArray = new String[] { };
+		String[] itemNameArray = new String[] { "", "", "", "", "", "" };
 		
 		// were those initialized properly ?
 		
@@ -23,6 +23,8 @@ public class A1Adept {
 			String itemName = scan.next();
 			
 			double price = scan.nextDouble();
+			
+			//Problem with array index out of bounds exception below
 			
 			itemPriceArray[itemPriceArray.length] = price;
 			
