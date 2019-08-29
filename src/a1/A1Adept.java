@@ -38,8 +38,6 @@ public class A1Adept {
 		
 		double totalCost = 0;
 		
-		double cost = 0;
-		
 		double price = 0;
 		
 		double quantity = 0;
@@ -51,6 +49,8 @@ public class A1Adept {
 		String biggestName = "";
 		
 		for (int i = 0; i < customerCount; i++) {
+			
+			double cost = 0;
 			
 			String firstName = scan.next();
 			
@@ -79,7 +79,7 @@ public class A1Adept {
 					}
 					
 				}
-					
+				
 				cost = cost + price * quantity;
 				
 			}
