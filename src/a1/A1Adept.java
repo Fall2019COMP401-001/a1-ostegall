@@ -52,8 +52,6 @@ public class A1Adept {
 		
 		for (int i = 0; i < customerCount; i++) {
 			
-			System.out.println(itemNameArray[0]);
-			
 			String firstName = scan.next();
 			
 			String lastName = scan.next();
@@ -63,6 +61,8 @@ public class A1Adept {
 			int itemsBought = scan.nextInt();
 			
 			for (int j = 0; j < itemsBought; j++) {
+				
+				System.out.println(itemNameArray[j]);
 				
 				quantity = scan.nextInt();
 				
