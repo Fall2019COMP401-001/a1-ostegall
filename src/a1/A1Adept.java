@@ -12,9 +12,9 @@ public class A1Adept {
 		
 		int itemCount = scan.nextInt();
 		
-		double[] itemPriceArray = new double[] { 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 };
+		double[] itemPriceArray = new double[itemCount];
 		
-		String[] itemNameArray = new String[] { "", "", "", "", "", "", "", "", "", "", "", "", "", "","", "", "", "", "", "", "", };
+		String[] itemNameArray = new String[itemCount];
 		
 		// were those initialized properly ?
 		
@@ -26,9 +26,9 @@ public class A1Adept {
 			
 			//Problem with array index out of bounds exception below
 			
-			itemPriceArray[itemPriceArray.length] = price;
+			itemPriceArray[i] = price;
 			
-			itemNameArray[itemNameArray.length] = itemName;
+			itemNameArray[i] = itemName;
 			
 		}
 		
@@ -38,9 +38,7 @@ public class A1Adept {
 		
 		double max = 0;
 		
-		String[] customerNameArray = new String[] { };
-		
-		double[] costArray = new double[] { };
+		String[] customerNameArray = new String[customerCount];
 		
 		double totalCost = 0;
 		
@@ -54,7 +52,7 @@ public class A1Adept {
 			
 			String lastName = scan.next();
 			
-			customerNameArray[customerNameArray.length] = firstName + lastName;
+			customerNameArray[i] = firstName + lastName;
 			
 			int itemsBought = scan.nextInt();
 			
@@ -82,7 +80,9 @@ public class A1Adept {
 				
 			}
 			
-			costArray[costArray.length] = cost;
+			double[] costArray = new double[itemsBought];
+			
+			costArray[i] = cost;
 			
 			totalCost = totalCost + costArray[i];
 			
