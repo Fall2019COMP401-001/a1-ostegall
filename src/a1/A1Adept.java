@@ -68,7 +68,7 @@ public class A1Adept {
 				
 				for (int k = 0; k < itemCount; k++) {
 					
-					System.out.println(itemNameArray[k]);
+					System.out.println(itemNameArray[k] == nameOfItemBought);
 					
 					if (itemNameArray[k] == nameOfItemBought) {
 						
