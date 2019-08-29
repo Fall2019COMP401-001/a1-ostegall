@@ -44,9 +44,9 @@ public class A1Adept {
 		
 		int quantity = 0;
 		
-		// fix array below to initialize length
+		// fix array below to initialize array length with 
 		
-		// 
+		double[] costArray;
 		
 		String smallestName = "";
 		
@@ -62,6 +62,8 @@ public class A1Adept {
 			
 			int itemsBought = scan.nextInt();
 			
+			costArray = new double[itemsBought];
+			
 			for (int j = 0; j < itemsBought; j++) {
 				
 				quantity = scan.nextInt();
@@ -70,17 +72,9 @@ public class A1Adept {
 				
 				for (int k = 0; k < itemCount; k++) {
 					
-					System.out.println(itemPriceArray[k]);
-					
-					System.out.println(nameOfItemBought);
-					
-					System.out.println("reached");
-					
 					if (itemNameArray[k] == nameOfItemBought) {
 						
-						//not being reached
-						
-						System.out.println(itemNameArray[k]);
+						//itemNameArray[k] not being read
 						
 						price = itemPriceArray[k];
 					
@@ -91,8 +85,6 @@ public class A1Adept {
 				cost = cost + price * quantity;
 				
 			}
-			
-			double[] costArray = new double[itemsBought];
 			
 			costArray[i] = cost;
 			
