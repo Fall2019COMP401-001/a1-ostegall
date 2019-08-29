@@ -42,9 +42,11 @@ public class A1Adept {
 		
 		double price = 0;
 		
-		int quantity = 0;
+		double quantity = 0;
 		
-		// fix array below to initialize array length with itemsBought var outside for loop
+		int itemsBought = 0;
+		
+		String[] itemsBoughtArray = new String[itemCount];
 		
 		String smallestName = "";
 		
@@ -58,39 +60,35 @@ public class A1Adept {
 			
 			customerNameArray[i] = firstName + " " + lastName;
 			
-			int itemsBought = scan.nextInt();
+			itemsBought = scan.nextInt();
+		
+		}
+		
+		double[] costArray = new double[itemsBought];
+		
+		for (int i = 0; i < customerCount; i++) {
 			
 			for (int j = 0; j < itemsBought; j++) {
 				
-				quantity = scan.nextInt();
+				quantity = scan.nextDouble();
 				
 				String nameOfItemBought = scan.next();
 				
+				itemsBoughtArray[j] = nameOfItemBought;
+				
 				for (int k = 0; k < itemCount; k++) {
-					
-					System.out.println(itemNameArray[k]);
-					
-					System.out.println(nameOfItemBought);
-					
-					System.out.println(itemNameArray[k] == nameOfItemBought);
-					
-					if (itemNameArray[k] == nameOfItemBought) {
-						
-						//itemNameArray[k] not being read and price stays 0
+				
+					if (itemsBoughtArray[k] == itemNameArray[k]) {
 						
 						price = itemPriceArray[k];
-					
+						
 					}
+				
+				cost = cost + price * quantity;
 					
 				}
 				
-				// bc price is 0, cost becomes 0
-				
-				cost = cost + price * quantity;
-				
 			}
-			
-			double[] costArray = new double[itemsBought];
 			
 			costArray[i] = cost;
 			
