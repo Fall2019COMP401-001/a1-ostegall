@@ -74,6 +74,8 @@ public class A1Adept {
 					
 					System.out.println(nameOfItemBought);
 					
+					System.out.println("reached");
+					
 					if (itemNameArray[k] == nameOfItemBought) {
 						
 						//not being reached
