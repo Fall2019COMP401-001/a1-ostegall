@@ -20,9 +20,9 @@ public class A1Adept {
 			
 			String itemName = scan.next();
 			
-			double price = scan.nextDouble();
+			double itemPrice = scan.nextDouble();
 			
-			itemPriceArray[i] = price;
+			itemPriceArray[i] = itemPrice;
 			
 			itemNameArray[i] = itemName;
 			
@@ -118,11 +118,11 @@ public class A1Adept {
 		
 		System.out.println(price);
 		
+		System.out.println(itemNameArray[0]);
+		
 		System.out.println(cost);
 		
 		System.out.println(quantity);
-		
-		System.out.println(itemPriceArray[0]);
 		
 		System.out.println("Biggest: " + biggestName + " (" + maxResult + ")");
 		
