@@ -12,9 +12,9 @@ public class A1Adept {
 		
 		int itemCount = scan.nextInt();
 		
-		double[] itemPriceArray = new double[] { 0, 5, 5, 5, 5, 5, 5 };
+		double[] itemPriceArray = new double[] { 0, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5 };
 		
-		String[] itemNameArray = new String[] { "", "", "", "", "", "" };
+		String[] itemNameArray = new String[] { "", "", "", "", "", "", "", "", "", "", "", "", "", "","", "", "", "", "", "", "", };
 		
 		// were those initialized properly ?
 		
@@ -108,7 +108,15 @@ public class A1Adept {
 		
 		String maxResult = String.format("%.2f", max);
 		
+		String minResult = String.format("%.2f", min);
+		
+		String averageResult = String.format("%.2f", average);
+		
 		System.out.println("Biggest: " + biggestName + " (" + maxResult + ")");
+		
+		System.out.println("Smallest: " + smallestName + " (" + minResult + ")");
+		
+		System.out.println("Average: " + averageResult);
 		
 		scan.close();
 
