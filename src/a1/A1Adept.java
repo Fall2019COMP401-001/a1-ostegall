@@ -36,7 +36,13 @@ public class A1Adept {
 		
 		String[] customerNameArray = new String[customerCount];
 		
-		double totalCost = 1;
+		double totalCost = 0;
+		
+		double cost = 0;
+		
+		double price = 0;
+		
+		int quantity = 0;
 		
 		// fix array below to initialize length
 		
@@ -56,13 +62,9 @@ public class A1Adept {
 			
 			int itemsBought = scan.nextInt();
 			
-			double cost = 0;
-			
-			double price = 0;
-			
 			for (int j = 0; j < itemsBought; j++) {
 				
-				int quantity = scan.nextInt();
+				quantity = scan.nextInt();
 				
 				String nameOfItemsBought = scan.next();
 				
