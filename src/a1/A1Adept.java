@@ -70,9 +70,11 @@ public class A1Adept {
 				
 				for (int k = 0; k < itemCount; k++) {
 					
+					System.out.println("Reached");
+					
 					if (itemNameArray[k] == nameOfItemBought) {
 						
-						//not becoming 1, but staying initialized 0
+						//not being reached
 						
 						System.out.println(itemNameArray[k]);
 						
