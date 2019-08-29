@@ -8,7 +8,7 @@ public class A1Adept {
 		
 		Scanner scan = new Scanner(System.in);
 
-		// Your code follows here.
+		//Your code follows here.
 		
 		int itemCount = scan.nextInt();
 		
@@ -61,55 +61,51 @@ public class A1Adept {
 			customerNameArray[i] = firstName + " " + lastName;
 			
 			itemsBought = scan.nextInt();
-		
-		}
-		
-		double[] costArray = new double[itemsBought];
-		
-		for (int i = 0; i < customerCount; i++) {
-			
+				
 			for (int j = 0; j < itemsBought; j++) {
-				
+					
 				quantity = scan.nextDouble();
-				
+					
 				String nameOfItemBought = scan.next();
-				
+					
 				itemsBoughtArray[j] = nameOfItemBought;
-				
+					
 				for (int k = 0; k < itemCount; k++) {
-				
+					
 					if (itemsBoughtArray[k] == itemNameArray[k]) {
-						
+							
 						price = itemPriceArray[k];
-						
-					}
-				
-				cost = cost + price * quantity;
+							
+						}
+					
+					cost = cost + price * quantity;
 					
 				}
-				
+					
 			}
+				
+			double[] costArray = new double[itemsBought];
 			
 			costArray[i] = cost;
-			
+				
 			totalCost = totalCost + costArray[i];
-			
+				
 			if (cost < min) {
-				
+					
 				min = cost;
-				
+					
 				smallestName = customerNameArray[i];
-				
+					
 			}
-			
+				
 			if (cost > max) {
-				
+					
 				max = cost;
-				
+					
 				biggestName = customerNameArray[i];
 				
 			}
-			
+				
 		}
 		
 		double average = totalCost / customerCount;
@@ -127,7 +123,10 @@ public class A1Adept {
 		System.out.println("Average: " + averageResult);
 		
 		scan.close();
-
+		
 	}
-	
+
 }
+
+
+
