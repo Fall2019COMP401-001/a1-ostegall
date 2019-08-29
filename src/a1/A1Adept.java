@@ -46,8 +46,6 @@ public class A1Adept {
 		
 		int itemsBought = 0;
 		
-		String[] itemsBoughtArray = new String[itemCount];
-		
 		String smallestName = "";
 		
 		String biggestName = "";
@@ -77,13 +75,13 @@ public class A1Adept {
 					if (string1.equals(string2)) {
 						
 						price = itemPriceArray[k];
-						
-						cost = cost + price * quantity;
-						
+					
 					}
 					
 				}
 					
+				cost = cost + price * quantity;
+				
 			}
 				
 			totalCost = totalCost + cost;
