@@ -16,15 +16,11 @@ public class A1Adept {
 		
 		String[] itemNameArray = new String[itemCount];
 		
-		// were those initialized properly ?
-		
 		for (int i = 0; i < itemCount; i++) {
 			
 			String itemName = scan.next();
 			
 			double price = scan.nextDouble();
-			
-			//Problem with array index out of bounds exception below
 			
 			itemPriceArray[i] = price;
 			
@@ -40,7 +36,11 @@ public class A1Adept {
 		
 		String[] customerNameArray = new String[customerCount];
 		
-		double totalCost = 0;
+		double totalCost = 1;
+		
+		// fix array below to initialize length
+		
+		// 
 		
 		String smallestName = "";
 		
@@ -52,7 +52,7 @@ public class A1Adept {
 			
 			String lastName = scan.next();
 			
-			customerNameArray[i] = firstName + lastName;
+			customerNameArray[i] = firstName + " " + lastName;
 			
 			int itemsBought = scan.nextInt();
 			
@@ -96,7 +96,7 @@ public class A1Adept {
 			
 			if (cost > max) {
 				
-				max  = cost;
+				max = cost;
 				
 				biggestName = customerNameArray[i];
 				
