@@ -70,15 +70,15 @@ public class A1Adept {
 				
 				for (int k = 0; k < itemCount; k++) {
 					
-					System.out.println("Reached");
+					System.out.println(itemPriceArray[k]);
+					
+					System.out.println(nameOfItemBought);
 					
 					if (itemNameArray[k] == nameOfItemBought) {
 						
 						//not being reached
 						
 						System.out.println(itemNameArray[k]);
-						
-						System.out.println(itemPriceArray[k]);
 						
 						price = itemPriceArray[k];
 					
