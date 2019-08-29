@@ -74,6 +74,8 @@ public class A1Adept {
 						
 						price = itemPriceArray[k];
 						
+						System.out.println(price)
+;						
 					}
 					
 				}
