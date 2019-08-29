@@ -75,6 +75,8 @@ public class A1Adept {
 						//not becoming 1, but staying initialized 0
 						
 						price = itemPriceArray[k];
+						
+						break;
 								
 					}
 					
@@ -117,8 +119,6 @@ public class A1Adept {
 		String averageResult = String.format("%.2f", average);
 		
 		System.out.println(price);
-		
-		System.out.println(itemNameArray[0]);
 		
 		System.out.println(cost);
 		
