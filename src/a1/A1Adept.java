@@ -28,8 +28,6 @@ public class A1Adept {
 			
 		}
 		
-		System.out.println(itemNameArray[0]);
-		
 		int customerCount = scan.nextInt();
 		
 		double min = 10000;
@@ -53,6 +51,8 @@ public class A1Adept {
 		String biggestName = "";
 		
 		for (int i = 0; i < customerCount; i++) {
+			
+			System.out.println(itemNameArray[0]);
 			
 			String firstName = scan.next();
 			
