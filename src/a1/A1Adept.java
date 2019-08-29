@@ -26,9 +26,9 @@ public class A1Adept {
 			
 			itemNameArray[i] = itemName;
 			
-			System.out.println(itemNameArray[i]);
-			
 		}
+		
+		System.out.println(itemNameArray[0]);
 		
 		int customerCount = scan.nextInt();
 		
