@@ -73,9 +73,7 @@ public class A1Adept {
 					if (itemNameArray[k] == nameOfItemsBought) {
 						
 						price = itemPriceArray[k];
-						
-						System.out.println(price)
-;						
+								
 					}
 					
 				}
@@ -115,6 +113,12 @@ public class A1Adept {
 		String minResult = String.format("%.2f", min);
 		
 		String averageResult = String.format("%.2f", average);
+		
+		System.out.println(price);
+		
+		System.out.println(cost);
+		
+		System.out.println(quantity);
 		
 		System.out.println("Biggest: " + biggestName + " (" + maxResult + ")");
 		
