@@ -72,8 +72,6 @@ public class A1Adept {
 						
 						//itemNameArray[k] not being read and price stays 0
 						
-						System.out.println(itemNameArray[k]);
-						
 						price = itemPriceArray[k];
 					
 					}
@@ -117,6 +115,8 @@ public class A1Adept {
 		String minResult = String.format("%.2f", min);
 		
 		String averageResult = String.format("%.2f", average);
+		
+		System.out.println(itemNameArray[0]);
 		
 		System.out.println("Biggest: " + biggestName + " (" + maxResult + ")");
 		
