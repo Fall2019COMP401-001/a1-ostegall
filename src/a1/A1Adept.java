@@ -122,7 +122,7 @@ public class A1Adept {
 		
 		System.out.println(quantity);
 		
-		System.out.println(itemNameArray);
+		System.out.println(itemNameArray[0]);
 		
 		System.out.println("Biggest: " + biggestName + " (" + maxResult + ")");
 		
