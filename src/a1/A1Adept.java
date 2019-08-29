@@ -40,7 +40,7 @@ public class A1Adept {
 		
 		double cost = 0;
 		
-		double price = 0;
+		double price = 1;
 		
 		int quantity = 0;
 		
@@ -71,6 +71,8 @@ public class A1Adept {
 				for (int k = 0; k < itemCount; k++) {
 					
 					if (itemNameArray[k] == nameOfItemsBought) {
+						
+						//not becoming one but staying 0
 						
 						price = itemPriceArray[k];
 								
