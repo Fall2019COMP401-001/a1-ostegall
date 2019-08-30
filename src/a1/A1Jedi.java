@@ -12,7 +12,7 @@ public class A1Jedi {
 		
 		String[] itemNameArray = new String[itemCount];
 		
-		int[] counterArray = new int[itemCount];
+		int[] itemCounterArray = new int[itemCount];
 		
 		for (int i = 0; i < itemCount; i++) {
 			
@@ -29,6 +29,8 @@ public class A1Jedi {
 		double quantityBought = 0;
 		
 		int customerCount = scan.nextInt();
+		
+		int[] customerCounterArray = new int[customerCount];
 		
 		for (int i = 0; i < customerCount; i++) {
 			
@@ -52,7 +54,9 @@ public class A1Jedi {
 					
 					if (string1.equals(string2)) { 
 						
-						counterArray[k] += 1;
+						itemCounterArray[k] += 1;
+						
+						customerCounterArray[i] += 1;
 					
 						}
 					
@@ -64,13 +68,13 @@ public class A1Jedi {
 		
 		for (int i = 0; i < itemCount; i++) {
 			
-			if (counterArray[i] == 0) {
+			if (itemCounterArray[i] == 0) {
 				
-				System.out.println("No customers bought " + itemNameArray[i]);
+				System.out.println("No customers bought " + itemCounterArray[i] + itemNameArray[i]);
 				
 			} else {
 				
-				System.out.println(counterArray[i] + " customers bought " + itemNameArray[i]); 
+				System.out.println(customerCounterArray[i] + " customers bought " + itemCounterArray[i] + itemNameArray[i]); 
 				
 			}
 			
