@@ -42,7 +42,7 @@ public class A1Jedi {
 			
 			int itemsBought = scan.nextInt();
 			
-			int[] counterChecker = new int[itemsBought];	
+			int[] counterChecker = new int[itemCount];	
 			
 			for (int j = 0; j < itemsBought; j++) {
 				
