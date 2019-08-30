@@ -58,9 +58,13 @@ public class A1Jedi {
 						
 						itemCounterArray[k] += quantityBought;
 						
-						customerCounterArray[i] += 1;
-					
+						if (customerCounterArray[k] == 0) {
+							
+							customerCounterArray[k] += 1;
+							
 						}
+					
+					}
 					
 				}
 						
