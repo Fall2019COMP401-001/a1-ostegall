@@ -10,9 +10,9 @@ public class A1Jedi {
 		
 		int itemCount = scan.nextInt();
 		
-		double[] itemPriceArray = new double[itemCount];
-		
 		String[] itemNameArray = new String[itemCount];
+		
+		int[] counterArray = new int[itemCount];
 		
 		for (int i = 0; i < itemCount; i++) {
 			
@@ -20,105 +20,63 @@ public class A1Jedi {
 			
 			double itemPrice = scan.nextDouble();
 			
-			itemPriceArray[i] = itemPrice;
-			
 			itemNameArray[i] = itemName;
 			
 		}
 		
+		String nameOfItemBought = "";
+		
+		double quantityBought = 0;
+		
 		int customerCount = scan.nextInt();
 		
-		double min = 10000;
-		
-		double max = 0;
-		
-		String[] customerNameArray = new String[customerCount];
-		
-		double totalCost = 0;
-		
-		double price = 0;
-		
-		double quantity = 0;
-		
-		int itemsBought = 0;
-		
-		String smallestName = "";
-		
-		String biggestName = "";
-		
 		for (int i = 0; i < customerCount; i++) {
-			
-			double cost = 0;
 			
 			String firstName = scan.next();
 			
 			String lastName = scan.next();
 			
-			customerNameArray[i] = firstName + " " + lastName;
+			int itemsBought = scan.nextInt();
 			
-			itemsBought = scan.nextInt();
-				
 			for (int j = 0; j < itemsBought; j++) {
-					
-				quantity = scan.nextDouble();
-					
-				String nameOfItemBought = scan.next();
-					
+				
+				quantityBought = scan.nextDouble();
+				
+				nameOfItemBought = scan.next();
+				
 				for (int k = 0; k < itemCount; k++) {
 					
 					String string1 = nameOfItemBought;
 					
 					String string2 = itemNameArray[k];
 					
-					if (string1.equals(string2)) {
+					if (string1.equals(string2)) { 
 						
-						price = itemPriceArray[k];
+						counterArray[k] += 1;
 					
-					}
+						}
 					
 				}
-				
-				cost = cost + price * quantity;
-				
-			}
-				
-			totalCost = totalCost + cost;
-				
-			if (cost < min) {
-					
-				min = cost;
-					
-				smallestName = customerNameArray[i];
-					
-			}
-				
-			if (cost > max) {
-					
-				max = cost;
-					
-				biggestName = customerNameArray[i];
-				
+						
 			}
 				
 		}
 		
-		double average = totalCost / customerCount;
-		
-		String maxResult = String.format("%.2f", max);
-		
-		String minResult = String.format("%.2f", min);
-		
-		String averageResult = String.format("%.2f", average);
-		
-		System.out.println("Biggest: " + biggestName + " (" + maxResult + ")");
-		
-		System.out.println("Smallest: " + smallestName + " (" + minResult + ")");
-		
-		System.out.println("Average: " + averageResult);
+		for (int i = 0; i < itemCount; i++) {
+			
+			if (counterArray[i] == 0) {
+				
+				System.out.println("No customers bought " + itemNameArray[i]);
+				
+			} else {
+				
+				System.out.println(counterArray[i] + " customers bought " + itemNameArray[i]); 
+				
+			}
+			
+		}
 		
 		scan.close();
-
-		// Your code follows here.
 		
 	}
 }
