@@ -32,7 +32,7 @@ public class A1Jedi {
 		
 		//fix array length
 		
-		int[] customerCounterArray = new int[customerCount];
+		int[] customerCounterArray = new int[itemCount];
 		
 		for (int i = 0; i < customerCount; i++) {
 			
