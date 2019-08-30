@@ -42,6 +42,8 @@ public class A1Jedi {
 			
 			int itemsBought = scan.nextInt();
 			
+			int[] counterChecker = new int[itemsBought];	
+			
 			for (int j = 0; j < itemsBought; j++) {
 				
 				quantityBought = scan.nextDouble();
@@ -57,15 +59,21 @@ public class A1Jedi {
 					if (string1.equals(string2)) { 
 						
 						itemCounterArray[k] += quantityBought;
-							
-						customerCounterArray[k] += 1;
+						
+						}
 					
+					if (string1.equals(string2) && counterChecker[j] != 1) {
+						
+						customerCounterArray[k] += 1;
+						
+						counterChecker[j] = 1;
+						
 					}
 					
 				}
-						
+					
 			}
-				
+						
 		}
 		
 		for (int i = 0; i < itemCount; i++) {
