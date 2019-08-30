@@ -57,10 +57,8 @@ public class A1Jedi {
 					if (string1.equals(string2)) { 
 						
 						itemCounterArray[k] += quantityBought;
-						
-						if (customerCounterArray[i] == 0) {
 							
-							customerCounterArray[i] += 1;
+						customerCounterArray[i] += 1;
 							
 						}
 					
