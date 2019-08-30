@@ -62,11 +62,11 @@ public class A1Jedi {
 						
 						}
 					
-					if (string1.equals(string2) && counterChecker[j] != 1) {
+					if (string1.equals(string2) && counterChecker[k] != 1) {
 						
 						customerCounterArray[k] += 1;
 						
-						counterChecker[j] = 1;
+						counterChecker[k] = 1;
 						
 					}
 					
