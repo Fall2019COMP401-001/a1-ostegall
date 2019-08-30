@@ -59,8 +59,6 @@ public class A1Jedi {
 						itemCounterArray[k] += quantityBought;
 							
 						customerCounterArray[i] += 1;
-							
-						}
 					
 					}
 					
